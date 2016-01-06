@@ -1,0 +1,9 @@
+formatter.name: pretty
+stop_on_failure: true
+code_generation: true
+suites:
+    main_suite:
+        namespace: Mongo
+        psr4_prefix: Mongo
+        src_path: src
+        spec_prefix: spec
