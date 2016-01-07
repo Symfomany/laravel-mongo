@@ -1,9 +1,8 @@
 <?php
 
 use \Illuminate\Support\Facades\Schema;
-use Jenssegers\Eloquent\Model as Eloquent;
 
-class MysqlRole extends Eloquent {
+class MysqlRole extends \Mongo\Eloquent\Model {
 
     protected $connection = 'mysql';
     protected $table = 'roles';

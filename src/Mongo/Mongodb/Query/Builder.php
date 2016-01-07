@@ -90,7 +90,7 @@ class Builder extends BaseBuilder {
      *
      * @param Connection $connection
      */
-    public function __construct(Connection $connection, Processor $processor)
+    public function __construct(\Illuminate\Database\Connection $connection,\Illuminate\Database\Query\Processors\Processor $processor)
     {
         $this->connection = $connection;
         $this->processor = $processor;
@@ -444,6 +444,12 @@ class Builder extends BaseBuilder {
      */
     public function find($id, $columns = [])
     {
+        $regex = '/[a-z]{3,}/i';
+        if (is_string($id) && !preg_match($regex, $id))
+        {
+            $id = new  \MongoDB\BSON\ObjectID($id);
+        }
+
         return $this->where('_id', '=', $id)->first($columns);
     }
 
@@ -587,14 +593,14 @@ class Builder extends BaseBuilder {
 //                {
 //                    foreach ($where['values'] as &$value)
 //                    {
-//                        $value = $this->convertKey($value);
+//                        $value = (string)($value);
 //                    }
 //                }
 //
 //                // Single value.
 //                elseif (isset($where['value']))
 //                {
-//                    $where['value'] = $this->convertKey($where['value']);
+//                    $where['value'] = (string)($where['value']);
 //                }
 //            }
 
@@ -960,6 +966,7 @@ class Builder extends BaseBuilder {
     }
 
 
+
     /**
      * Get an array with the values of a given column.
      *
@@ -969,6 +976,7 @@ class Builder extends BaseBuilder {
      */
     public function lists($column, $key = null)
     {
+
         if ($key == '_id')
         {
             $results = new Collection($this->get([$column, $key]));
@@ -981,10 +989,10 @@ class Builder extends BaseBuilder {
                 return $item;
             });
 
-            return $results->lists($column, $key)->all();
+            return $results->pluck($column, $key)->all();
         }
 
-        return parent::lists($column, $key);
+        return parent::pluck($column, $key);
     }
 
     /**

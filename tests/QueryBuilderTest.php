@@ -379,7 +379,9 @@ class QueryBuilderTest extends BaseTestCase {
             ['name' => 'spoon', 'type' => 'round', 'amount' => 3],
             ['name' => 'spoon', 'type' => 'round', 'amount' => 14],
         ]);
-        $list = DB::collection('items')->lists('name');
+
+        $list = DB::collection('items');
+        $list = $list->pluck('name');
         sort($list);
         $this->assertEquals(4, count($list));
         $this->assertEquals(['fork', 'knife', 'spoon', 'spoon'], $list);
@@ -389,6 +391,7 @@ class QueryBuilderTest extends BaseTestCase {
         $list = DB::collection('items')->lists('name', '_id');
         $this->assertEquals(4, count($list));
         $this->assertEquals(24, strlen(key($list)));
+
     }
 
 

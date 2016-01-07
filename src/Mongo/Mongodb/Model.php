@@ -54,6 +54,12 @@ abstract class Model extends BaseModel {
             $value = $this->attributes['_id'];
         }
 
+        // Convert MongoId's to string.
+//        if ($value instanceof  \MongoDB\BSON\ObjectID)
+//        {
+//            return (string) $value;
+//        }
+
 
         return $value;
     }
@@ -311,6 +317,8 @@ abstract class Model extends BaseModel {
         parent::setAttribute($key, $value);
     }
 
+
+
     /**
      * Convert the model's attributes to an array.
      *
@@ -318,19 +326,77 @@ abstract class Model extends BaseModel {
      */
     public function attributesToArray()
     {
-        $attributes = parent::attributesToArray();
+
+        $attributes = $this->getArrayableAttributes();
+
+
+        foreach ($attributes as $key => $value)
+        {
+            if ($value instanceof \MongoDB\BSON\ObjectID)
+            {
+                $attributes[$key] = (string)$value;
+            }
+        }
+
+        // If an attribute is a date, we will cast it to a string after converting it
+        // to a DateTime / Carbon instance. This is so we will get some consistent
+        // formatting while accessing attributes vs. arraying / JSONing a model.
+        foreach ($this->getDates() as $key) {
+
+            if (! isset($attributes[$key])) {
+                continue;
+            }
+
+            $attributes[$key] = $this->serializeDate(
+                $this->asDateTime($attributes[$key])
+            );
+        }
+
+        $mutatedAttributes = $this->getMutatedAttributes();
+
+        // We want to spin through all the mutated attributes for this model and call
+        // the mutator for the attribute. We cache off every mutated attributes so
+        // we don't have to constantly check on attributes that actually change.
+        foreach ($mutatedAttributes as $key) {
+            if (! array_key_exists($key, $attributes)) {
+                continue;
+            }
+
+            $attributes[$key] = $this->mutateAttributeForArray(
+                $key, $attributes[$key]
+            );
+        }
+
+        // Next we will handle any casts that have been setup for this model and cast
+        // the values to their appropriate type. If the attribute has a mutator we
+        // will not perform the cast on those attributes to avoid any confusion.
+        foreach ($this->getCasts() as $key => $value) {
+            if (! array_key_exists($key, $attributes) ||
+                in_array($key, $mutatedAttributes)) {
+                continue;
+            }
+
+            $attributes[$key] = $this->castAttribute(
+                $key, $attributes[$key]
+            );
+
+            if ($attributes[$key] && ($value === 'date' || $value === 'datetime')) {
+                $attributes[$key] = $this->serializeDate($attributes[$key]);
+            }
+        }
+
+        // Here we will grab all of the appended, calculated attributes to this model
+        // as these attributes are not really in the attributes array, but are run
+        // when we need to array or JSON the model for convenience to the coder.
+        foreach ($this->getArrayableAppends() as $key) {
+            $attributes[$key] = $this->mutateAttributeForArray($key, null);
+        }
 
         // Because the original Eloquent never returns objects, we convert
         // MongoDB related objects to a string representation. This kind
         // of mimics the SQL behaviour so that dates are formatted
         // nicely when your models are converted to JSON.
-//        foreach ($attributes as $key => &$value)
-//        {
-//            if ($value instanceof MongoId)
-//            {
-//                $value = (string) $value;
-//            }
-//        }
+
 
         // Convert dot-notation dates.
         foreach ($this->getDates() as $key)

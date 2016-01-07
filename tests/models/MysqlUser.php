@@ -1,10 +1,9 @@
 <?php
 
-use Mongo\Mongodb\Model as Eloquent;
 use \Illuminate\Support\Facades\Schema;
 
 
-class MysqlUser extends Eloquent {
+class MysqlUser extends \Mongo\Eloquent\Model {
 
     protected $connection = 'mysql';
     protected $table = 'users';
