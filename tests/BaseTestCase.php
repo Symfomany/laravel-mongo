@@ -14,7 +14,8 @@ class BaseTestCase extends Orchestra\Testbench\TestCase {
     protected function getPackageProviders($app)
     {
         return [
-            'Mongo\Mongodb\MongodbServiceProvider'
+            'Mongo\Mongodb\MongodbServiceProvider',
+            'Mongo\Mongodb\Auth\PasswordResetServiceProvider'
         ];
     }
 
@@ -26,14 +27,15 @@ class BaseTestCase extends Orchestra\Testbench\TestCase {
      */
     protected function getEnvironmentSetUp($app)
     {
-        //        $app['path.base'] = __DIR__ . '/../src';
         $config = require __DIR__.'/config/database.php';
+
+
         $app['config']->set('database.default', 'mongodb');
         $app['config']->set('database.connections.mysql', $config['connections']['mysql']);
         $app['config']->set('database.connections.mongodb', $config['connections']['mongodb']);
 
+        $app['config']->set('auth.providers.users.model', 'User');
         $app['config']->set('cache.driver', 'array');
-        $app['config']->set('auth.model', 'User');
 
     }
 }

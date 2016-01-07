@@ -1,7 +1,6 @@
 <?php
 
 use Mongo\Mongodb\Model as Eloquent;
-
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
@@ -15,6 +14,7 @@ class User extends Eloquent implements AuthenticatableContract, CanResetPassword
     protected $dates = ['birthday', 'entry.date'];
     protected static $unguarded = true;
     protected $collection = 'users';
+
 
     public function book()
     {

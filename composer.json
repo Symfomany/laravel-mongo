@@ -1,12 +1,13 @@
 {
- "name": "jenssegers/mongodb",
+ "name": "symfomany/laravel-mongo",
  "description": "A MongoDB based Eloquent model and Query builder for Laravel 5",
  "keywords": ["laravel", "eloquent", "mongodb", "mongo", "database", "model"],
- "homepage": "https://github.com/symfomany/laravel-mongodb",
+ "homepage": "https://github.com/symfomany/laravel-mongo",
  "version": "1.0",
+ "type": "library",
  "authors": [{
   "name": "Boyer Julien",
-  "homepage": "https://github.com/symfomany/laravel-mongodb"
+  "homepage": "https://github.com/symfomany/laravel-mongo"
  }],
  "license": "MIT",
  "require": {

@@ -8,6 +8,7 @@ class MysqlUser extends \Mongo\Eloquent\Model {
     protected $connection = 'mysql';
     protected $table = 'users';
     protected static $unguarded = true;
+
     public function books()
     {
         return $this->hasMany('Book', 'author_id');

@@ -13,13 +13,9 @@ class Builder extends EloquentBuilder {
      * @var array
      */
     protected $passthru = [
-        'toSql', 'lists', 'insert', 'insertGetId', 'pluck',
+        'toSql', 'pluck', 'insert', 'insertGetId', 'pluck',
         'count', 'min', 'max', 'avg', 'sum', 'exists', 'push', 'pull',
     ];
-
-
-
-
 
 
     /**

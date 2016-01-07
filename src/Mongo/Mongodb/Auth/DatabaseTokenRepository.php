@@ -1,7 +1,6 @@
 <?php namespace Mongo\Mongodb\Auth;
 
 use DateTime;
-use MongoDate;
 
 class DatabaseTokenRepository extends \Illuminate\Auth\Passwords\DatabaseTokenRepository {
 
@@ -26,7 +25,7 @@ class DatabaseTokenRepository extends \Illuminate\Auth\Passwords\DatabaseTokenRe
     protected function tokenExpired($token)
     {
         // Convert MongoDate to a date string.
-        if ($token['created_at'] instanceof MongoDate)
+        if ($token['created_at'] instanceof DateTime)
         {
             $date = new DateTime;
 

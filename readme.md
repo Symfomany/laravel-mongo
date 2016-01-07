@@ -1,4 +1,11 @@
 [![Build Status](https://travis-ci.org/Symfomany/laravel-mongo.svg?branch=master)](https://travis-ci.org/Symfomany/laravel-mongo)
+![Packagist](https://img.shields.io/packagist/v/symfomany/laravelcinema.svg)
+![Packagist](https://img.shields.io/github/forks/Symfomany/laravelcinema.svg)
+![Packagist](https://img.shields.io/github/stars/Symfomany/laravelcinema.svg)
+![Packagist](https://img.shields.io/twitter/url/https/github.com/Symfomany/laravelcinema.svg?style=social)
+![Packagist](https://poser.pugx.org/symfomany/laravelcinema/license.svg)
+![Packagist](https://poser.pugx.org/symfomany/laravelcinema/downloads)
+
 
 ## MongoDB PHP Project
 
