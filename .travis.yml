@@ -5,9 +5,8 @@ php:
 
 matrix:
   fast_finish: true
-#  allow_failures:
-#    - php: hhvm
-#    - php: 7.0
+  allow_failures:
+    - php: 7.0
 
 sudo: false
 
