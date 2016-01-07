@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/mongo/src/Mongo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../js/html5shiv.min.js"></script>
+  <script src="../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">/var/www/html/mongo</a></li>
+        <li><a href="../index.html">src</a></li>
+        <li><a href="index.html">Mongo</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Mongodb/Relations/HasMany.php.html#6">HasMany</a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Mongodb/Relations/HasOne.php.html#6">HasOne</a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Mongodb/Eloquent/HybridRelations.php.html#13">HybridRelations</a></td><td class="text-right">38%</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#10">Connection</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Mongodb/Model.php.html#17">Model</a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="Mongodb/Collection.php.html#9">Collection</a></td><td class="text-right">86%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Mongodb/Eloquent/HybridRelations.php.html#13">HybridRelations</a></td><td class="text-right">206</td></tr>
+       <tr><td><a href="Mongodb/Model.php.html#17">Model</a></td><td class="text-right">149</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#10">Connection</a></td><td class="text-right">40</td></tr>
+       <tr><td><a href="Mongodb/Collection.php.html#9">Collection</a></td><td class="text-right">14</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Mongodb/Model.php.html#86"><abbr title="Model::embedsMany">embedsMany</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Model.php.html#125"><abbr title="Model::embedsOne">embedsOne</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Eloquent/HybridRelations.php.html#181"><abbr title="HybridRelations::morphTo">morphTo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Eloquent/HybridRelations.php.html#104"><abbr title="HybridRelations::morphMany">morphMany</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Eloquent/HybridRelations.php.html#50"><abbr title="HybridRelations::morphOne">morphOne</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Relations/HasOne.php.html#15"><abbr title="HasOne::getRelationCountQuery">getRelationCountQuery</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Relations/HasMany.php.html#15"><abbr title="HasMany::getRelationCountQuery">getRelationCountQuery</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#1064"><abbr title="Builder::generateCacheKey">generateCacheKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#462"><abbr title="Builder::convertKey">convertKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#118"><abbr title="Builder::hint">hint</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#105"><abbr title="Builder::timeout">timeout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#297"><abbr title="Connection::__call">__call</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#284"><abbr title="Connection::setConfig">setConfig</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#276"><abbr title="Connection::getConfig">getConfig</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#259"><abbr title="Connection::setManager">setManager</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#222"><abbr title="Connection::getElapsedTime">getElapsedTime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Collection.php.html#135"><abbr title="Collection::setNamespace">setNamespace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Model.php.html#562"><abbr title="Model::setParentRelation">setParentRelation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Eloquent/HybridRelations.php.html#230"><abbr title="HybridRelations::belongsToMany">belongsToMany</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#77"><abbr title="Connection::createManager">createManager</abbr></a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#1088"><abbr title="Builder::__call">__call</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#445"><abbr title="Builder::find">find</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Mongodb/Model.php.html#229"><abbr title="Model::getAttribute">getAttribute</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#479"><abbr title="Builder::raw">raw</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Mongodb/Collection.php.html#99"><abbr title="Collection::remove">remove</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Mongodb/Model.php.html#327"><abbr title="Model::attributesToArray">attributesToArray</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#109"><abbr title="Connection::getDsn">getDsn</abbr></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Mongodb/Eloquent/HybridRelations.php.html#230"><abbr title="HybridRelations::belongsToMany">belongsToMany</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Mongodb/Model.php.html#86"><abbr title="Model::embedsMany">embedsMany</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Mongodb/Model.php.html#125"><abbr title="Model::embedsOne">embedsOne</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Mongodb/Model.php.html#327"><abbr title="Model::attributesToArray">attributesToArray</abbr></a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#462"><abbr title="Builder::convertKey">convertKey</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Mongodb/Eloquent/HybridRelations.php.html#50"><abbr title="HybridRelations::morphOne">morphOne</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Mongodb/Eloquent/HybridRelations.php.html#104"><abbr title="HybridRelations::morphMany">morphMany</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Mongodb/Eloquent/HybridRelations.php.html#181"><abbr title="HybridRelations::morphTo">morphTo</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Mongodb/Model.php.html#229"><abbr title="Model::getAttribute">getAttribute</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#77"><abbr title="Connection::createManager">createManager</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Mongodb/Connection.php.html#109"><abbr title="Connection::getDsn">getDsn</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#445"><abbr title="Builder::find">find</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Mongodb/Collection.php.html#99"><abbr title="Collection::remove">remove</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#479"><abbr title="Builder::raw">raw</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Mongodb/Query/Builder.php.html#1088"><abbr title="Builder::__call">__call</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.4</a> using <a href="http://php.net/" target="_top">PHP 7.0.1-4+deb.sury.org~trusty+1</a> and <a href="https://phpunit.de/">PHPUnit 4.8.21</a> at Thu Jan 7 18:50:13 UTC 2016.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../js/holder.min.js" type="text/javascript"></script>
+  <script src="../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,0,0,3,0,0,0,2,1,1,5], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([19,0,0,0,0,0,0,2,2,4,2,84], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[78.102189781022,81,"<a href=\"Mongodb\/Model.php.html#17\">Model<\/a>"],[86.95652173913,14,"<a href=\"Mongodb\/Collection.php.html#9\">Collection<\/a>"],[75,28,"<a href=\"Mongodb\/Connection.php.html#10\">Connection<\/a>"],[100,1,"<a href=\"Mongodb\/Database.php.html#9\">Database<\/a>"],[90.041493775934,127,"<a href=\"Mongodb\/Query\/Builder.php.html#21\">Builder<\/a>"],[100,3,"<a href=\"Mongodb\/MongodbServiceProvider.php.html#10\">MongodbServiceProvider<\/a>"],[100,0,"<a href=\"Mongodb\/Query\/Processor.php.html#12\">Processor<\/a>"],[100,3,"<a href=\"Mongodb\/Relations\/BelongsTo.php.html#3\">BelongsTo<\/a>"],[33.333333333333,2,"<a href=\"Mongodb\/Relations\/HasMany.php.html#6\">HasMany<\/a>"],[33.333333333333,2,"<a href=\"Mongodb\/Relations\/HasOne.php.html#6\">HasOne<\/a>"],[38.983050847458,28,"<a href=\"Mongodb\/Eloquent\/HybridRelations.php.html#13\">HybridRelations<\/a>"],[100,1,"<a href=\"Mongodb\/Eloquent\/SoftDeletes.php.html#3\">SoftDeletes<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,3,"<a href=\"Mongodb\/Model.php.html#48\">Model::getIdAttribute<\/a>"],[100,1,"<a href=\"Mongodb\/Model.php.html#72\">Model::getQualifiedKeyName<\/a>"],[0,4,"<a href=\"Mongodb\/Model.php.html#86\">Model::embedsMany<\/a>"],[0,4,"<a href=\"Mongodb\/Model.php.html#125\">Model::embedsOne<\/a>"],[100,3,"<a href=\"Mongodb\/Model.php.html#160\">Model::fromDateTime<\/a>"],[100,2,"<a href=\"Mongodb\/Model.php.html#183\">Model::asDateTime<\/a>"],[100,2,"<a href=\"Mongodb\/Model.php.html#198\">Model::getDateFormat<\/a>"],[100,1,"<a href=\"Mongodb\/Model.php.html#208\">Model::freshTimestamp<\/a>"],[100,2,"<a href=\"Mongodb\/Model.php.html#218\">Model::getTable<\/a>"],[75,7,"<a href=\"Mongodb\/Model.php.html#229\">Model::getAttribute<\/a>"],[100,3,"<a href=\"Mongodb\/Model.php.html#278\">Model::getAttributeFromArray<\/a>"],[100,4,"<a href=\"Mongodb\/Model.php.html#300\">Model::setAttribute<\/a>"],[86.206896551724,17,"<a href=\"Mongodb\/Model.php.html#327\">Model::attributesToArray<\/a>"],[100,4,"<a href=\"Mongodb\/Model.php.html#419\">Model::originalIsNumericallyEquivalent<\/a>"],[100,3,"<a href=\"Mongodb\/Model.php.html#442\">Model::drop<\/a>"],[90,4,"<a href=\"Mongodb\/Model.php.html#461\">Model::push<\/a>"],[100,2,"<a href=\"Mongodb\/Model.php.html#496\">Model::pull<\/a>"],[100,5,"<a href=\"Mongodb\/Model.php.html#515\">Model::pushAttributeValues<\/a>"],[100,4,"<a href=\"Mongodb\/Model.php.html#538\">Model::pullAttributeValues<\/a>"],[0,1,"<a href=\"Mongodb\/Model.php.html#562\">Model::setParentRelation<\/a>"],[100,1,"<a href=\"Mongodb\/Model.php.html#572\">Model::getParentRelation<\/a>"],[100,1,"<a href=\"Mongodb\/Model.php.html#583\">Model::newEloquentBuilder<\/a>"],[100,1,"<a href=\"Mongodb\/Model.php.html#593\">Model::newBaseQueryBuilder<\/a>"],[100,2,"<a href=\"Mongodb\/Model.php.html#607\">Model::__call<\/a>"],[100,1,"<a href=\"Mongodb\/Collection.php.html#32\">Collection::__construct<\/a>"],[100,2,"<a href=\"Mongodb\/Collection.php.html#45\">Collection::create<\/a>"],[100,1,"<a href=\"Mongodb\/Collection.php.html#58\">Collection::insert<\/a>"],[100,2,"<a href=\"Mongodb\/Collection.php.html#68\">Collection::update<\/a>"],[100,2,"<a href=\"Mongodb\/Collection.php.html#81\">Collection::find<\/a>"],[80,3,"<a href=\"Mongodb\/Collection.php.html#99\">Collection::remove<\/a>"],[100,1,"<a href=\"Mongodb\/Collection.php.html#119\">Collection::replace<\/a>"],[100,1,"<a href=\"Mongodb\/Collection.php.html#127\">Collection::getNamespace<\/a>"],[0,1,"<a href=\"Mongodb\/Collection.php.html#135\">Collection::setNamespace<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#50\">Connection::__construct<\/a>"],[62.5,5,"<a href=\"Mongodb\/Connection.php.html#77\">Connection::createManager<\/a>"],[87.5,6,"<a href=\"Mongodb\/Connection.php.html#109\">Connection::getDsn<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#145\">Connection::getDefaultPostProcessor<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#157\">Connection::collection<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#172\">Connection::table<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#182\">Connection::getCollection<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#191\">Connection::getCollections<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#202\">Connection::getDatabase<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#212\">Connection::getClient<\/a>"],[0,1,"<a href=\"Mongodb\/Connection.php.html#222\">Connection::getElapsedTime<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#232\">Connection::getDriverName<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#243\">Connection::getMongoDB<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#251\">Connection::getManager<\/a>"],[0,1,"<a href=\"Mongodb\/Connection.php.html#259\">Connection::setManager<\/a>"],[100,1,"<a href=\"Mongodb\/Connection.php.html#268\">Connection::getNameDatabase<\/a>"],[0,1,"<a href=\"Mongodb\/Connection.php.html#276\">Connection::getConfig<\/a>"],[0,1,"<a href=\"Mongodb\/Connection.php.html#284\">Connection::setConfig<\/a>"],[0,1,"<a href=\"Mongodb\/Connection.php.html#297\">Connection::__call<\/a>"],[100,1,"<a href=\"Mongodb\/Database.php.html#15\">Database::getName<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#93\">Builder::__construct<\/a>"],[0,1,"<a href=\"Mongodb\/Query\/Builder.php.html#105\">Builder::timeout<\/a>"],[0,1,"<a href=\"Mongodb\/Query\/Builder.php.html#118\">Builder::hint<\/a>"],[100,2,"<a href=\"Mongodb\/Query\/Builder.php.html#132\">Builder::from<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#150\">Builder::get<\/a>"],[94.736842105263,33,"<a href=\"Mongodb\/Query\/Builder.php.html#162\">Builder::getFresh<\/a>"],[100,4,"<a href=\"Mongodb\/Query\/Builder.php.html#329\">Builder::insert<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#361\">Builder::insertGetId<\/a>"],[100,2,"<a href=\"Mongodb\/Query\/Builder.php.html#378\">Builder::update<\/a>"],[100,2,"<a href=\"Mongodb\/Query\/Builder.php.html#397\">Builder::performUpdate<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#419\">Builder::delete<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#431\">Builder::truncate<\/a>"],[75,3,"<a href=\"Mongodb\/Query\/Builder.php.html#445\">Builder::find<\/a>"],[0,3,"<a href=\"Mongodb\/Query\/Builder.php.html#462\">Builder::convertKey<\/a>"],[80,3,"<a href=\"Mongodb\/Query\/Builder.php.html#479\">Builder::raw<\/a>"],[100,3,"<a href=\"Mongodb\/Query\/Builder.php.html#509\">Builder::where<\/a>"],[100,2,"<a href=\"Mongodb\/Query\/Builder.php.html#534\">Builder::project<\/a>"],[100,2,"<a href=\"Mongodb\/Query\/Builder.php.html#549\">Builder::aggregate<\/a>"],[100,10,"<a href=\"Mongodb\/Query\/Builder.php.html#573\">Builder::compileWheres<\/a>"],[100,10,"<a href=\"Mongodb\/Query\/Builder.php.html#658\">Builder::compileWhereBasic<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#711\">Builder::compileWhereNested<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#718\">Builder::compileWhereIn<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#725\">Builder::compileWhereNotIn<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#732\">Builder::compileWhereNull<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#740\">Builder::compileWhereNotNull<\/a>"],[100,2,"<a href=\"Mongodb\/Query\/Builder.php.html#749\">Builder::compileWhereBetween<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#788\">Builder::forPage<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#801\">Builder::newQuery<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#813\">Builder::exists<\/a>"],[100,2,"<a href=\"Mongodb\/Query\/Builder.php.html#823\">Builder::distinct<\/a>"],[100,4,"<a href=\"Mongodb\/Query\/Builder.php.html#842\">Builder::orderBy<\/a>"],[100,3,"<a href=\"Mongodb\/Query\/Builder.php.html#867\">Builder::drop<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#892\">Builder::whereBetween<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#902\">Builder::compileWhereRaw<\/a>"],[100,5,"<a href=\"Mongodb\/Query\/Builder.php.html#915\">Builder::push<\/a>"],[100,4,"<a href=\"Mongodb\/Query\/Builder.php.html#946\">Builder::pull<\/a>"],[100,2,"<a href=\"Mongodb\/Query\/Builder.php.html#974\">Builder::pluck<\/a>"],[100,2,"<a href=\"Mongodb\/Query\/Builder.php.html#997\">Builder::lists<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#1036\">Builder::anonymous function<\/a>"],[100,2,"<a href=\"Mongodb\/Query\/Builder.php.html#1026\">Builder::increment<\/a>"],[100,1,"<a href=\"Mongodb\/Query\/Builder.php.html#1054\">Builder::decrement<\/a>"],[0,1,"<a href=\"Mongodb\/Query\/Builder.php.html#1064\">Builder::generateCacheKey<\/a>"],[66.666666666667,2,"<a href=\"Mongodb\/Query\/Builder.php.html#1088\">Builder::__call<\/a>"],[100,1,"<a href=\"Mongodb\/MongodbServiceProvider.php.html#15\">MongodbServiceProvider::boot<\/a>"],[100,1,"<a href=\"Mongodb\/MongodbServiceProvider.php.html#25\">MongodbServiceProvider::register<\/a>"],[100,1,"<a href=\"Mongodb\/MongodbServiceProvider.php.html#31\">MongodbServiceProvider::anonymous function<\/a>"],[100,2,"<a href=\"Mongodb\/Relations\/BelongsTo.php.html#9\">BelongsTo::addConstraints<\/a>"],[100,1,"<a href=\"Mongodb\/Relations\/BelongsTo.php.html#26\">BelongsTo::addEagerConstraints<\/a>"],[0,1,"<a href=\"Mongodb\/Relations\/HasMany.php.html#15\">HasMany::getRelationCountQuery<\/a>"],[100,1,"<a href=\"Mongodb\/Relations\/HasMany.php.html#27\">HasMany::getPlainForeignKey<\/a>"],[0,1,"<a href=\"Mongodb\/Relations\/HasOne.php.html#15\">HasOne::getRelationCountQuery<\/a>"],[100,1,"<a href=\"Mongodb\/Relations\/HasOne.php.html#27\">HasOne::getPlainForeignKey<\/a>"],[100,4,"<a href=\"Mongodb\/Eloquent\/HybridRelations.php.html#23\">HybridRelations::hasOne<\/a>"],[0,3,"<a href=\"Mongodb\/Eloquent\/HybridRelations.php.html#50\">HybridRelations::morphOne<\/a>"],[100,4,"<a href=\"Mongodb\/Eloquent\/HybridRelations.php.html#77\">HybridRelations::hasMany<\/a>"],[0,3,"<a href=\"Mongodb\/Eloquent\/HybridRelations.php.html#104\">HybridRelations::morphMany<\/a>"],[100,5,"<a href=\"Mongodb\/Eloquent\/HybridRelations.php.html#135\">HybridRelations::belongsTo<\/a>"],[0,3,"<a href=\"Mongodb\/Eloquent\/HybridRelations.php.html#181\">HybridRelations::morphTo<\/a>"],[0,6,"<a href=\"Mongodb\/Eloquent\/HybridRelations.php.html#230\">HybridRelations::belongsToMany<\/a>"],[100,1,"<a href=\"Mongodb\/Eloquent\/SoftDeletes.php.html#12\">SoftDeletes::getQualifiedDeletedAtColumn<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

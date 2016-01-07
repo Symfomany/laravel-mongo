@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/mongo/vendor/symfony</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../js/html5shiv.min.js"></script>
+  <script src="../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">/var/www/html/mongo</a></li>
+        <li><a href="../index.html">vendor</a></li>
+        <li><a href="index.html">symfony</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#23">MetadataBag</a></td><td class="text-right">12%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/Handler/NullSessionHandler.php.html#21">NullSessionHandler</a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#19">HeaderBag</a></td><td class="text-right">21%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#19">ParameterBag</a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#29">Request</a></td><td class="text-right">26%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#38">Finder</a></td><td class="text-right">31%</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#19">Cookie</a></td><td class="text-right">31%</td></tr>
+       <tr><td><a href="finder/SplFileInfo.php.html#19">SplFileInfo</a></td><td class="text-right">38%</td></tr>
+       <tr><td><a href="http-foundation/ServerBag.php.html#21">ServerBag</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="finder/Iterator/ExcludeDirectoryFilterIterator.php.html#19">ExcludeDirectoryFilterIterator</a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#22">RecursiveDirectoryIterator</a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="finder/Glob.php.html#36">Glob</a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="finder/Iterator/FileTypeFilterIterator.php.html#19">FileTypeFilterIterator</a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="finder/Iterator/PathFilterIterator.php.html#20">PathFilterIterator</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="finder/Iterator/FilterIterator.php.html#21">FilterIterator</a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="http-foundation/FileBag.php.html#22">FileBag</a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="http-foundation/Request.php.html#29">Request</a></td><td class="text-right">27853</td></tr>
+       <tr><td><a href="finder/Finder.php.html#38">Finder</a></td><td class="text-right">1729</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#19">HeaderBag</a></td><td class="text-right">965</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#19">ParameterBag</a></td><td class="text-right">218</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#19">Cookie</a></td><td class="text-right">191</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#23">MetadataBag</a></td><td class="text-right">147</td></tr>
+       <tr><td><a href="finder/Glob.php.html#36">Glob</a></td><td class="text-right">79</td></tr>
+       <tr><td><a href="http-foundation/ServerBag.php.html#21">ServerBag</a></td><td class="text-right">48</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#22">RecursiveDirectoryIterator</a></td><td class="text-right">36</td></tr>
+       <tr><td><a href="finder/Iterator/ExcludeDirectoryFilterIterator.php.html#19">ExcludeDirectoryFilterIterator</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="http-foundation/FileBag.php.html#22">FileBag</a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="finder/SplFileInfo.php.html#19">SplFileInfo</a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="finder/Iterator/FileTypeFilterIterator.php.html#19">FileTypeFilterIterator</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="finder/Iterator/FilterIterator.php.html#21">FilterIterator</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="finder/Iterator/PathFilterIterator.php.html#20">PathFilterIterator</a></td><td class="text-right">4</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="finder/Finder.php.html#87"><abbr title="Finder::directories">directories</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#857"><abbr title="Request::getScriptName">getScriptName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#738"><abbr title="Request::getSession">getSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#749"><abbr title="Request::hasPreviousSession">hasPreviousSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#764"><abbr title="Request::hasSession">hasSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#774"><abbr title="Request::setSession">setSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#792"><abbr title="Request::getClientIps">getClientIps</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#845"><abbr title="Request::getClientIp">getClientIp</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#897"><abbr title="Request::getBasePath">getBasePath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#697"><abbr title="Request::getHttpMethodParameterOverride">getHttpMethodParameterOverride</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#982"><abbr title="Request::getUser">getUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#992"><abbr title="Request::getPassword">getPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1002"><abbr title="Request::getUserInfo">getUserInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1083"><abbr title="Request::getUriForPath">getUriForPath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1107"><abbr title="Request::getRelativeUriForPath">getRelativeUriForPath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1247"><abbr title="Request::setMethod">setMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1292"><abbr title="Request::getRealMethod">getRealMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#716"><abbr title="Request::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#687"><abbr title="Request::enableHttpMethodParameterOverride">enableHttpMethodParameterOverride</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1320"><abbr title="Request::getFormat">getFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#426"><abbr title="Request::duplicate">duplicate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#187"><abbr title="ParameterBag::getBoolean">getBoolean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#204"><abbr title="ParameterBag::filter">filter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#226"><abbr title="ParameterBag::getIterator">getIterator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#236"><abbr title="ParameterBag::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#121"><abbr title="Finder::depth">depth</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#409"><abbr title="Request::setFactory">setFactory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#476"><abbr title="Request::__clone">__clone</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#624"><abbr title="Request::getTrustedHeaderName">getTrustedHeaderName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#492"><abbr title="Request::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#512"><abbr title="Request::overrideGlobals">overrideGlobals</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#548"><abbr title="Request::setTrustedProxies">setTrustedProxies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#558"><abbr title="Request::getTrustedProxies">getTrustedProxies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#572"><abbr title="Request::anonymous function">anonymous function</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#584"><abbr title="Request::getTrustedHosts">getTrustedHosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#606"><abbr title="Request::setTrustedHeaderName">setTrustedHeaderName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1304"><abbr title="Request::getMimeType">getMimeType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1343"><abbr title="Request::setFormat">setFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#160"><abbr title="ParameterBag::getDigits">getDigits</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#71"><abbr title="MetadataBag::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1857"><abbr title="Request::setPhpDefaultLocale">setPhpDefaultLocale</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/Handler/NullSessionHandler.php.html#26"><abbr title="NullSessionHandler::open">open</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/Handler/NullSessionHandler.php.html#34"><abbr title="NullSessionHandler::close">close</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/Handler/NullSessionHandler.php.html#42"><abbr title="NullSessionHandler::read">read</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/Handler/NullSessionHandler.php.html#50"><abbr title="NullSessionHandler::write">write</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/Handler/NullSessionHandler.php.html#66"><abbr title="NullSessionHandler::gc">gc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#92"><abbr title="MetadataBag::getLifetime">getLifetime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1781"><abbr title="Request::prepareBasePath">prepareBasePath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#105"><abbr title="MetadataBag::stampNew">stampNew</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#113"><abbr title="MetadataBag::getStorageKey">getStorageKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#123"><abbr title="MetadataBag::getCreated">getCreated</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#133"><abbr title="MetadataBag::getLastUsed">getLastUsed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#141"><abbr title="MetadataBag::clear">clear</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#149"><abbr title="MetadataBag::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#159"><abbr title="MetadataBag::setName">setName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1836"><abbr title="Request::initializeFormats">initializeFormats</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1655"><abbr title="Request::isXmlHttpRequest">isXmlHttpRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1365"><abbr title="Request::getRequestFormat">getRequestFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1445"><abbr title="Request::isMethod">isMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1379"><abbr title="Request::setRequestFormat">setRequestFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1389"><abbr title="Request::getContentType">getContentType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1399"><abbr title="Request::setDefaultLocale">setDefaultLocale</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1413"><abbr title="Request::getDefaultLocale">getDefaultLocale</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1423"><abbr title="Request::setLocale">setLocale</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1433"><abbr title="Request::getLocale">getLocale</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1455"><abbr title="Request::isMethodSafe">isMethodSafe</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1636"><abbr title="Request::getAcceptableContentTypes">getAcceptableContentTypes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1469"><abbr title="Request::getContent">getContent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1515"><abbr title="Request::getETags">getETags</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1523"><abbr title="Request::isNoCache">isNoCache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1535"><abbr title="Request::getPreferredLanguage">getPreferredLanguage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1568"><abbr title="Request::getLanguages">getLanguages</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1608"><abbr title="Request::getCharsets">getCharsets</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1622"><abbr title="Request::getEncodings">getEncodings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#174"><abbr title="ParameterBag::getInt">getInt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#265"><abbr title="Request::createFromGlobals">createFromGlobals</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#147"><abbr title="ParameterBag::getAlnum">getAlnum</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#435"><abbr title="Finder::sortByAccessedTime">sortByAccessedTime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#78"><abbr title="Cookie::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/SplFileInfo.php.html#65"><abbr title="SplFileInfo::getContents">getContents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/SplFileInfo.php.html#43"><abbr title="SplFileInfo::getRelativePath">getRelativePath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#134"><abbr title="ParameterBag::getAlpha">getAlpha</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#87"><abbr title="RecursiveDirectoryIterator::getChildren">getChildren</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Iterator/ExcludeDirectoryFilterIterator.php.html#77"><abbr title="ExcludeDirectoryFilterIterator::getChildren">getChildren</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#621"><abbr title="Finder::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#597"><abbr title="Finder::append">append</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#520"><abbr title="Finder::ignoreUnreadableDirs">ignoreUnreadableDirs</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#504"><abbr title="Finder::followLinks">followLinks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#492"><abbr title="Finder::filter">filter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#473"><abbr title="Finder::sortByModifiedTime">sortByModifiedTime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#455"><abbr title="Finder::sortByChangedTime">sortByChangedTime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#417"><abbr title="Finder::sortByType">sortByType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#136"><abbr title="Cookie::getDomain">getDomain</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#401"><abbr title="Finder::sortByName">sortByName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#385"><abbr title="Finder::sort">sort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#363"><abbr title="Finder::addVCSPattern">addVCSPattern</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#345"><abbr title="Finder::ignoreVCS">ignoreVCS</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#325"><abbr title="Finder::ignoreDotFiles">ignoreDotFiles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#309"><abbr title="Finder::exclude">exclude</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#293"><abbr title="Finder::size">size</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#272"><abbr title="Finder::notPath">notPath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#249"><abbr title="Finder::path">path</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#226"><abbr title="Finder::notContains">notContains</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#205"><abbr title="Finder::contains">contains</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#184"><abbr title="Finder::notName">notName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#146"><abbr title="Finder::date">date</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#126"><abbr title="Cookie::getValue">getValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#164"><abbr title="MetadataBag::stampCreated">stampCreated</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#146"><abbr title="Cookie::getExpiresTime">getExpiresTime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#75"><abbr title="HeaderBag::keys">keys</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#96"><abbr title="HeaderBag::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#175"><abbr title="HeaderBag::contains">contains</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#65"><abbr title="HeaderBag::all">all</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#185"><abbr title="HeaderBag::remove">remove</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#206"><abbr title="HeaderBag::getDate">getDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#225"><abbr title="HeaderBag::addCacheControlDirective">addCacheControlDirective</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#239"><abbr title="HeaderBag::hasCacheControlDirective">hasCacheControlDirective</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#251"><abbr title="HeaderBag::getCacheControlDirective">getCacheControlDirective</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#261"><abbr title="HeaderBag::removeCacheControlDirective">removeCacheControlDirective</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#41"><abbr title="HeaderBag::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#273"><abbr title="HeaderBag::getIterator">getIterator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#283"><abbr title="HeaderBag::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#186"><abbr title="Cookie::isCleared">isCleared</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#288"><abbr title="HeaderBag::getCacheControlHeader">getCacheControlHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#176"><abbr title="Cookie::isHttpOnly">isHttpOnly</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#314"><abbr title="HeaderBag::parseCacheControl">parseCacheControl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#53"><abbr title="ParameterBag::keys">keys</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#63"><abbr title="ParameterBag::replace">replace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#166"><abbr title="Cookie::isSecure">isSecure</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#73"><abbr title="ParameterBag::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#121"><abbr title="ParameterBag::remove">remove</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#156"><abbr title="Cookie::getPath">getPath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#85"><abbr title="HeaderBag::replace">replace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#643"><abbr title="Request::normalizeQueryString">normalizeQueryString</abbr></a></td><td class="text-right">14%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#564"><abbr title="Finder::getIterator">getIterator</abbr></a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1894"><abbr title="Request::createRequestFromFactory">createRequestFromFactory</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1198"><abbr title="Request::getHost">getHost</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1879"><abbr title="Request::getUrlencodedPrefix">getUrlencodedPrefix</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1715"><abbr title="Request::prepareBaseUrl">prepareBaseUrl</abbr></a></td><td class="text-right">34%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1668"><abbr title="Request::prepareRequestUri">prepareRequestUri</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="finder/Iterator/ExcludeDirectoryFilterIterator.php.html#56"><abbr title="ExcludeDirectoryFilterIterator::accept">accept</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#948"><abbr title="Request::getPort">getPort</abbr></a></td><td class="text-right">46%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1268"><abbr title="Request::getMethod">getMethod</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="http-foundation/ServerBag.php.html#28"><abbr title="ServerBag::getHeaders">getHeaders</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#631"><abbr title="Finder::searchInDirectory">searchInDirectory</abbr></a></td><td class="text-right">54%</td></tr>
+       <tr><td><a href="finder/Glob.php.html#48"><abbr title="Glob::toRegex">toRegex</abbr></a></td><td class="text-right">63%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#308"><abbr title="Request::create">create</abbr></a></td><td class="text-right">65%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1807"><abbr title="Request::preparePathInfo">preparePathInfo</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="finder/Iterator/FileTypeFilterIterator.php.html#44"><abbr title="FileTypeFilterIterator::accept">accept</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="http-foundation/FileBag.php.html#60"><abbr title="FileBag::add">add</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#42"><abbr title="Cookie::__construct">__construct</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1067"><abbr title="Request::getUri">getUri</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="finder/Iterator/PathFilterIterator.php.html#27"><abbr title="PathFilterIterator::accept">accept</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#112"><abbr title="HeaderBag::get">get</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#138"><abbr title="HeaderBag::set">set</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1172"><abbr title="Request::isSecure">isSecure</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#48"><abbr title="RecursiveDirectoryIterator::__construct">__construct</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="finder/Finder.php.html#536"><abbr title="Finder::in">in</abbr></a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1021"><abbr title="Request::getHttpHost">getHttpHost</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#115"><abbr title="RecursiveDirectoryIterator::rewind">rewind</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="finder/Iterator/ExcludeDirectoryFilterIterator.php.html#32"><abbr title="ExcludeDirectoryFilterIterator::__construct">__construct</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#67"><abbr title="RecursiveDirectoryIterator::current">current</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="finder/Iterator/FilterIterator.php.html#29"><abbr title="FilterIterator::rewind">rewind</abbr></a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#132"><abbr title="RecursiveDirectoryIterator::isRewindable">isRewindable</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="finder/Iterator/MultiplePcreFilterIterator.php.html#55"><abbr title="MultiplePcreFilterIterator::isAccepted">isAccepted</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="http-foundation/Request.php.html#1107"><abbr title="Request::getRelativeUriForPath">getRelativeUriForPath</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#426"><abbr title="Request::duplicate">duplicate</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#792"><abbr title="Request::getClientIps">getClientIps</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1715"><abbr title="Request::prepareBaseUrl">prepareBaseUrl</abbr></a></td><td class="text-right">98</td></tr>
+       <tr><td><a href="finder/Glob.php.html#48"><abbr title="Glob::toRegex">toRegex</abbr></a></td><td class="text-right">79</td></tr>
+       <tr><td><a href="finder/Finder.php.html#631"><abbr title="Finder::searchInDirectory">searchInDirectory</abbr></a></td><td class="text-right">73</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1535"><abbr title="Request::getPreferredLanguage">getPreferredLanguage</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1568"><abbr title="Request::getLanguages">getLanguages</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1469"><abbr title="Request::getContent">getContent</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="finder/Finder.php.html#597"><abbr title="Finder::append">append</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#78"><abbr title="Cookie::__toString">__toString</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1198"><abbr title="Request::getHost">getHost</abbr></a></td><td class="text-right">54</td></tr>
+       <tr><td><a href="http-foundation/ServerBag.php.html#28"><abbr title="ServerBag::getHeaders">getHeaders</abbr></a></td><td class="text-right">48</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#265"><abbr title="Request::createFromGlobals">createFromGlobals</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#512"><abbr title="Request::overrideGlobals">overrideGlobals</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1320"><abbr title="Request::getFormat">getFormat</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="http-foundation/ParameterBag.php.html#204"><abbr title="ParameterBag::filter">filter</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#308"><abbr title="Request::create">create</abbr></a></td><td class="text-right">29</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#643"><abbr title="Request::normalizeQueryString">normalizeQueryString</abbr></a></td><td class="text-right">28</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#948"><abbr title="Request::getPort">getPort</abbr></a></td><td class="text-right">25</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1668"><abbr title="Request::prepareRequestUri">prepareRequestUri</abbr></a></td><td class="text-right">24</td></tr>
+       <tr><td><a href="finder/Finder.php.html#564"><abbr title="Finder::getIterator">getIterator</abbr></a></td><td class="text-right">23</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#314"><abbr title="HeaderBag::parseCacheControl">parseCacheControl</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#716"><abbr title="Request::get">get</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#288"><abbr title="HeaderBag::getCacheControlHeader">getCacheControlHeader</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#41"><abbr title="HeaderBag::__toString">__toString</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#87"><abbr title="RecursiveDirectoryIterator::getChildren">getChildren</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1781"><abbr title="Request::prepareBasePath">prepareBasePath</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="finder/Iterator/ExcludeDirectoryFilterIterator.php.html#56"><abbr title="ExcludeDirectoryFilterIterator::accept">accept</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#206"><abbr title="HeaderBag::getDate">getDate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#71"><abbr title="MetadataBag::initialize">initialize</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1857"><abbr title="Request::setPhpDefaultLocale">setPhpDefaultLocale</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1304"><abbr title="Request::getMimeType">getMimeType</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1343"><abbr title="Request::setFormat">setFormat</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="http-foundation/Cookie.php.html#42"><abbr title="Cookie::__construct">__construct</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1807"><abbr title="Request::preparePathInfo">preparePathInfo</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1268"><abbr title="Request::getMethod">getMethod</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#112"><abbr title="HeaderBag::get">get</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="finder/Iterator/MultiplePcreFilterIterator.php.html#55"><abbr title="MultiplePcreFilterIterator::isAccepted">isAccepted</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1365"><abbr title="Request::getRequestFormat">getRequestFormat</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1433"><abbr title="Request::getLocale">getLocale</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1636"><abbr title="Request::getAcceptableContentTypes">getAcceptableContentTypes</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1622"><abbr title="Request::getEncodings">getEncodings</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1608"><abbr title="Request::getCharsets">getCharsets</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1523"><abbr title="Request::isNoCache">isNoCache</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1399"><abbr title="Request::setDefaultLocale">setDefaultLocale</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="finder/Finder.php.html#325"><abbr title="Finder::ignoreDotFiles">ignoreDotFiles</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#606"><abbr title="Request::setTrustedHeaderName">setTrustedHeaderName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Session/Storage/MetadataBag.php.html#164"><abbr title="MetadataBag::stampCreated">stampCreated</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#492"><abbr title="Request::__toString">__toString</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="finder/Finder.php.html#363"><abbr title="Finder::addVCSPattern">addVCSPattern</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#96"><abbr title="HeaderBag::add">add</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#185"><abbr title="HeaderBag::remove">remove</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#251"><abbr title="HeaderBag::getCacheControlDirective">getCacheControlDirective</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="finder/SplFileInfo.php.html#65"><abbr title="SplFileInfo::getContents">getContents</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="finder/Finder.php.html#345"><abbr title="Finder::ignoreVCS">ignoreVCS</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#749"><abbr title="Request::hasPreviousSession">hasPreviousSession</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#897"><abbr title="Request::getBasePath">getBasePath</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1002"><abbr title="Request::getUserInfo">getUserInfo</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#624"><abbr title="Request::getTrustedHeaderName">getTrustedHeaderName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="finder/Iterator/FileTypeFilterIterator.php.html#44"><abbr title="FileTypeFilterIterator::accept">accept</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1879"><abbr title="Request::getUrlencodedPrefix">getUrlencodedPrefix</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1894"><abbr title="Request::createRequestFromFactory">createRequestFromFactory</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1172"><abbr title="Request::isSecure">isSecure</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="finder/Finder.php.html#536"><abbr title="Finder::in">in</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1021"><abbr title="Request::getHttpHost">getHttpHost</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="finder/Iterator/ExcludeDirectoryFilterIterator.php.html#32"><abbr title="ExcludeDirectoryFilterIterator::__construct">__construct</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="finder/Iterator/FilterIterator.php.html#29"><abbr title="FilterIterator::rewind">rewind</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="http-foundation/HeaderBag.php.html#138"><abbr title="HeaderBag::set">set</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#48"><abbr title="RecursiveDirectoryIterator::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#132"><abbr title="RecursiveDirectoryIterator::isRewindable">isRewindable</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#67"><abbr title="RecursiveDirectoryIterator::current">current</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="http-foundation/FileBag.php.html#60"><abbr title="FileBag::add">add</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="http-foundation/Request.php.html#1067"><abbr title="Request::getUri">getUri</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="finder/Iterator/PathFilterIterator.php.html#27"><abbr title="PathFilterIterator::accept">accept</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="finder/Iterator/RecursiveDirectoryIterator.php.html#115"><abbr title="RecursiveDirectoryIterator::rewind">rewind</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.4</a> using <a href="http://php.net/" target="_top">PHP 7.0.1-4+deb.sury.org~trusty+1</a> and <a href="https://phpunit.de/">PHPUnit 4.8.21</a> at Thu Jan 7 18:50:13 UTC 2016.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../js/holder.min.js" type="text/javascript"></script>
+  <script src="../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,2,3,3,0,3,1,1,3,1,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([133,0,1,0,5,3,3,7,6,7,0,39], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[31.617647058824,72,"<a href=\"finder\/Finder.php.html#38\">Finder<\/a>"],[63.157894736842,31,"<a href=\"finder\/Glob.php.html#36\">Glob<\/a>"],[56.521739130435,14,"<a href=\"finder\/Iterator\/ExcludeDirectoryFilterIterator.php.html#19\">ExcludeDirectoryFilterIterator<\/a>"],[77.777777777778,6,"<a href=\"finder\/Iterator\/FileTypeFilterIterator.php.html#19\">FileTypeFilterIterator<\/a>"],[100,3,"<a href=\"finder\/Iterator\/FilenameFilterIterator.php.html#21\">FilenameFilterIterator<\/a>"],[84.615384615385,5,"<a href=\"finder\/Iterator\/FilterIterator.php.html#21\">FilterIterator<\/a>"],[95.833333333333,16,"<a href=\"finder\/Iterator\/MultiplePcreFilterIterator.php.html#19\">MultiplePcreFilterIterator<\/a>"],[80,4,"<a href=\"finder\/Iterator\/PathFilterIterator.php.html#20\">PathFilterIterator<\/a>"],[59.459459459459,17,"<a href=\"finder\/Iterator\/RecursiveDirectoryIterator.php.html#22\">RecursiveDirectoryIterator<\/a>"],[38.461538461538,5,"<a href=\"finder\/SplFileInfo.php.html#19\">SplFileInfo<\/a>"],[31.707317073171,23,"<a href=\"http-foundation\/Cookie.php.html#19\">Cookie<\/a>"],[87.5,19,"<a href=\"http-foundation\/FileBag.php.html#22\">FileBag<\/a>"],[21.917808219178,44,"<a href=\"http-foundation\/HeaderBag.php.html#19\">HeaderBag<\/a>"],[25.925925925926,22,"<a href=\"http-foundation\/ParameterBag.php.html#19\">ParameterBag<\/a>"],[26.574803149606,264,"<a href=\"http-foundation\/Request.php.html#29\">Request<\/a>"],[50,16,"<a href=\"http-foundation\/ServerBag.php.html#21\">ServerBag<\/a>"],[16.666666666667,6,"<a href=\"http-foundation\/Session\/Storage\/Handler\/NullSessionHandler.php.html#21\">NullSessionHandler<\/a>"],[12,14,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#23\">MetadataBag<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"finder\/Finder.php.html#67\">Finder::__construct<\/a>"],[100,1,"<a href=\"finder\/Finder.php.html#77\">Finder::create<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#87\">Finder::directories<\/a>"],[100,1,"<a href=\"finder\/Finder.php.html#99\">Finder::files<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#121\">Finder::depth<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#146\">Finder::date<\/a>"],[100,1,"<a href=\"finder\/Finder.php.html#168\">Finder::name<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#184\">Finder::notName<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#205\">Finder::contains<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#226\">Finder::notContains<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#249\">Finder::path<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#272\">Finder::notPath<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#293\">Finder::size<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#309\">Finder::exclude<\/a>"],[0,2,"<a href=\"finder\/Finder.php.html#325\">Finder::ignoreDotFiles<\/a>"],[0,2,"<a href=\"finder\/Finder.php.html#345\">Finder::ignoreVCS<\/a>"],[0,2,"<a href=\"finder\/Finder.php.html#363\">Finder::addVCSPattern<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#385\">Finder::sort<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#401\">Finder::sortByName<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#417\">Finder::sortByType<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#435\">Finder::sortByAccessedTime<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#455\">Finder::sortByChangedTime<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#473\">Finder::sortByModifiedTime<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#492\">Finder::filter<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#504\">Finder::followLinks<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#520\">Finder::ignoreUnreadableDirs<\/a>"],[77.777777777778,5,"<a href=\"finder\/Finder.php.html#536\">Finder::in<\/a>"],[30,7,"<a href=\"finder\/Finder.php.html#564\">Finder::getIterator<\/a>"],[0,7,"<a href=\"finder\/Finder.php.html#597\">Finder::append<\/a>"],[0,1,"<a href=\"finder\/Finder.php.html#621\">Finder::count<\/a>"],[54.166666666667,23,"<a href=\"finder\/Finder.php.html#631\">Finder::searchInDirectory<\/a>"],[63.157894736842,31,"<a href=\"finder\/Glob.php.html#48\">Glob::toRegex<\/a>"],[81.818181818182,5,"<a href=\"finder\/Iterator\/ExcludeDirectoryFilterIterator.php.html#32\">ExcludeDirectoryFilterIterator::__construct<\/a>"],[42.857142857143,6,"<a href=\"finder\/Iterator\/ExcludeDirectoryFilterIterator.php.html#56\">ExcludeDirectoryFilterIterator::accept<\/a>"],[100,2,"<a href=\"finder\/Iterator\/ExcludeDirectoryFilterIterator.php.html#72\">ExcludeDirectoryFilterIterator::hasChildren<\/a>"],[0,1,"<a href=\"finder\/Iterator\/ExcludeDirectoryFilterIterator.php.html#77\">ExcludeDirectoryFilterIterator::getChildren<\/a>"],[100,1,"<a href=\"finder\/Iterator\/FileTypeFilterIterator.php.html#32\">FileTypeFilterIterator::__construct<\/a>"],[66.666666666667,5,"<a href=\"finder\/Iterator\/FileTypeFilterIterator.php.html#44\">FileTypeFilterIterator::accept<\/a>"],[100,1,"<a href=\"finder\/Iterator\/FilenameFilterIterator.php.html#28\">FilenameFilterIterator::accept<\/a>"],[100,2,"<a href=\"finder\/Iterator\/FilenameFilterIterator.php.html#43\">FilenameFilterIterator::toRegex<\/a>"],[84.615384615385,5,"<a href=\"finder\/Iterator\/FilterIterator.php.html#29\">FilterIterator::rewind<\/a>"],[100,3,"<a href=\"finder\/Iterator\/MultiplePcreFilterIterator.php.html#31\">MultiplePcreFilterIterator::__construct<\/a>"],[88.888888888889,6,"<a href=\"finder\/Iterator\/MultiplePcreFilterIterator.php.html#55\">MultiplePcreFilterIterator::isAccepted<\/a>"],[100,6,"<a href=\"finder\/Iterator\/MultiplePcreFilterIterator.php.html#86\">MultiplePcreFilterIterator::isRegex<\/a>"],[100,1,"<a href=\"finder\/Iterator\/MultiplePcreFilterIterator.php.html#113\">MultiplePcreFilterIterator::toRegex<\/a>"],[75,2,"<a href=\"finder\/Iterator\/PathFilterIterator.php.html#27\">PathFilterIterator::accept<\/a>"],[100,2,"<a href=\"finder\/Iterator\/PathFilterIterator.php.html#52\">PathFilterIterator::toRegex<\/a>"],[75,4,"<a href=\"finder\/Iterator\/RecursiveDirectoryIterator.php.html#48\">RecursiveDirectoryIterator::__construct<\/a>"],[83.333333333333,3,"<a href=\"finder\/Iterator\/RecursiveDirectoryIterator.php.html#67\">RecursiveDirectoryIterator::current<\/a>"],[0,4,"<a href=\"finder\/Iterator\/RecursiveDirectoryIterator.php.html#87\">RecursiveDirectoryIterator::getChildren<\/a>"],[80,2,"<a href=\"finder\/Iterator\/RecursiveDirectoryIterator.php.html#115\">RecursiveDirectoryIterator::rewind<\/a>"],[87.5,4,"<a href=\"finder\/Iterator\/RecursiveDirectoryIterator.php.html#132\">RecursiveDirectoryIterator::isRewindable<\/a>"],[100,1,"<a href=\"finder\/SplFileInfo.php.html#31\">SplFileInfo::__construct<\/a>"],[0,1,"<a href=\"finder\/SplFileInfo.php.html#43\">SplFileInfo::getRelativePath<\/a>"],[100,1,"<a href=\"finder\/SplFileInfo.php.html#53\">SplFileInfo::getRelativePathname<\/a>"],[0,2,"<a href=\"finder\/SplFileInfo.php.html#65\">SplFileInfo::getContents<\/a>"],[66.666666666667,8,"<a href=\"http-foundation\/Cookie.php.html#42\">Cookie::__construct<\/a>"],[0,7,"<a href=\"http-foundation\/Cookie.php.html#78\">Cookie::__toString<\/a>"],[100,1,"<a href=\"http-foundation\/Cookie.php.html#116\">Cookie::getName<\/a>"],[0,1,"<a href=\"http-foundation\/Cookie.php.html#126\">Cookie::getValue<\/a>"],[0,1,"<a href=\"http-foundation\/Cookie.php.html#136\">Cookie::getDomain<\/a>"],[0,1,"<a href=\"http-foundation\/Cookie.php.html#146\">Cookie::getExpiresTime<\/a>"],[0,1,"<a href=\"http-foundation\/Cookie.php.html#156\">Cookie::getPath<\/a>"],[0,1,"<a href=\"http-foundation\/Cookie.php.html#166\">Cookie::isSecure<\/a>"],[0,1,"<a href=\"http-foundation\/Cookie.php.html#176\">Cookie::isHttpOnly<\/a>"],[0,1,"<a href=\"http-foundation\/Cookie.php.html#186\">Cookie::isCleared<\/a>"],[100,1,"<a href=\"http-foundation\/FileBag.php.html#31\">FileBag::__construct<\/a>"],[100,1,"<a href=\"http-foundation\/FileBag.php.html#39\">FileBag::replace<\/a>"],[100,3,"<a href=\"http-foundation\/FileBag.php.html#48\">FileBag::set<\/a>"],[66.666666666667,2,"<a href=\"http-foundation\/FileBag.php.html#60\">FileBag::add<\/a>"],[100,5,"<a href=\"http-foundation\/FileBag.php.html#74\">FileBag::convertFileInformation<\/a>"],[100,7,"<a href=\"http-foundation\/FileBag.php.html#115\">FileBag::fixPhpFilesArray<\/a>"],[100,2,"<a href=\"http-foundation\/HeaderBag.php.html#29\">HeaderBag::__construct<\/a>"],[0,4,"<a href=\"http-foundation\/HeaderBag.php.html#41\">HeaderBag::__toString<\/a>"],[0,1,"<a href=\"http-foundation\/HeaderBag.php.html#65\">HeaderBag::all<\/a>"],[0,1,"<a href=\"http-foundation\/HeaderBag.php.html#75\">HeaderBag::keys<\/a>"],[0,1,"<a href=\"http-foundation\/HeaderBag.php.html#85\">HeaderBag::replace<\/a>"],[0,2,"<a href=\"http-foundation\/HeaderBag.php.html#96\">HeaderBag::add<\/a>"],[75,7,"<a href=\"http-foundation\/HeaderBag.php.html#112\">HeaderBag::get<\/a>"],[75,4,"<a href=\"http-foundation\/HeaderBag.php.html#138\">HeaderBag::set<\/a>"],[100,1,"<a href=\"http-foundation\/HeaderBag.php.html#162\">HeaderBag::has<\/a>"],[0,1,"<a href=\"http-foundation\/HeaderBag.php.html#175\">HeaderBag::contains<\/a>"],[0,2,"<a href=\"http-foundation\/HeaderBag.php.html#185\">HeaderBag::remove<\/a>"],[0,3,"<a href=\"http-foundation\/HeaderBag.php.html#206\">HeaderBag::getDate<\/a>"],[0,1,"<a href=\"http-foundation\/HeaderBag.php.html#225\">HeaderBag::addCacheControlDirective<\/a>"],[0,1,"<a href=\"http-foundation\/HeaderBag.php.html#239\">HeaderBag::hasCacheControlDirective<\/a>"],[0,2,"<a href=\"http-foundation\/HeaderBag.php.html#251\">HeaderBag::getCacheControlDirective<\/a>"],[0,1,"<a href=\"http-foundation\/HeaderBag.php.html#261\">HeaderBag::removeCacheControlDirective<\/a>"],[0,1,"<a href=\"http-foundation\/HeaderBag.php.html#273\">HeaderBag::getIterator<\/a>"],[0,1,"<a href=\"http-foundation\/HeaderBag.php.html#283\">HeaderBag::count<\/a>"],[0,4,"<a href=\"http-foundation\/HeaderBag.php.html#288\">HeaderBag::getCacheControlHeader<\/a>"],[0,4,"<a href=\"http-foundation\/HeaderBag.php.html#314\">HeaderBag::parseCacheControl<\/a>"],[100,1,"<a href=\"http-foundation\/ParameterBag.php.html#33\">ParameterBag::__construct<\/a>"],[100,1,"<a href=\"http-foundation\/ParameterBag.php.html#43\">ParameterBag::all<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#53\">ParameterBag::keys<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#63\">ParameterBag::replace<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#73\">ParameterBag::add<\/a>"],[100,2,"<a href=\"http-foundation\/ParameterBag.php.html#88\">ParameterBag::get<\/a>"],[100,1,"<a href=\"http-foundation\/ParameterBag.php.html#99\">ParameterBag::set<\/a>"],[100,1,"<a href=\"http-foundation\/ParameterBag.php.html#111\">ParameterBag::has<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#121\">ParameterBag::remove<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#134\">ParameterBag::getAlpha<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#147\">ParameterBag::getAlnum<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#160\">ParameterBag::getDigits<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#174\">ParameterBag::getInt<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#187\">ParameterBag::getBoolean<\/a>"],[0,5,"<a href=\"http-foundation\/ParameterBag.php.html#204\">ParameterBag::filter<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#226\">ParameterBag::getIterator<\/a>"],[0,1,"<a href=\"http-foundation\/ParameterBag.php.html#236\">ParameterBag::count<\/a>"],[100,1,"<a href=\"http-foundation\/Request.php.html#219\">Request::__construct<\/a>"],[100,1,"<a href=\"http-foundation\/Request.php.html#237\">Request::initialize<\/a>"],[0,6,"<a href=\"http-foundation\/Request.php.html#265\">Request::createFromGlobals<\/a>"],[65,17,"<a href=\"http-foundation\/Request.php.html#308\">Request::create<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#409\">Request::setFactory<\/a>"],[0,10,"<a href=\"http-foundation\/Request.php.html#426\">Request::duplicate<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#476\">Request::__clone<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#492\">Request::__toString<\/a>"],[0,6,"<a href=\"http-foundation\/Request.php.html#512\">Request::overrideGlobals<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#548\">Request::setTrustedProxies<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#558\">Request::getTrustedProxies<\/a>"],[100,1,"<a href=\"http-foundation\/Request.php.html#570\">Request::setTrustedHosts<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#572\">Request::anonymous function<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#584\">Request::getTrustedHosts<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#606\">Request::setTrustedHeaderName<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#624\">Request::getTrustedHeaderName<\/a>"],[14.285714285714,6,"<a href=\"http-foundation\/Request.php.html#643\">Request::normalizeQueryString<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#687\">Request::enableHttpMethodParameterOverride<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#697\">Request::getHttpMethodParameterOverride<\/a>"],[0,4,"<a href=\"http-foundation\/Request.php.html#716\">Request::get<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#738\">Request::getSession<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#749\">Request::hasPreviousSession<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#764\">Request::hasSession<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#774\">Request::setSession<\/a>"],[0,10,"<a href=\"http-foundation\/Request.php.html#792\">Request::getClientIps<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#845\">Request::getClientIp<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#857\">Request::getScriptName<\/a>"],[100,2,"<a href=\"http-foundation\/Request.php.html#876\">Request::getPathInfo<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#897\">Request::getBasePath<\/a>"],[100,2,"<a href=\"http-foundation\/Request.php.html#916\">Request::getBaseUrl<\/a>"],[100,2,"<a href=\"http-foundation\/Request.php.html#930\">Request::getScheme<\/a>"],[46.153846153846,10,"<a href=\"http-foundation\/Request.php.html#948\">Request::getPort<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#982\">Request::getUser<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#992\">Request::getPassword<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#1002\">Request::getUserInfo<\/a>"],[80,5,"<a href=\"http-foundation\/Request.php.html#1021\">Request::getHttpHost<\/a>"],[100,2,"<a href=\"http-foundation\/Request.php.html#1038\">Request::getRequestUri<\/a>"],[100,1,"<a href=\"http-foundation\/Request.php.html#1055\">Request::getSchemeAndHttpHost<\/a>"],[66.666666666667,2,"<a href=\"http-foundation\/Request.php.html#1067\">Request::getUri<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1083\">Request::getUriForPath<\/a>"],[0,16,"<a href=\"http-foundation\/Request.php.html#1107\">Request::getRelativeUriForPath<\/a>"],[100,2,"<a href=\"http-foundation\/Request.php.html#1151\">Request::getQueryString<\/a>"],[75,5,"<a href=\"http-foundation\/Request.php.html#1172\">Request::isSecure<\/a>"],[33.333333333333,12,"<a href=\"http-foundation\/Request.php.html#1198\">Request::getHost<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1247\">Request::setMethod<\/a>"],[50,5,"<a href=\"http-foundation\/Request.php.html#1268\">Request::getMethod<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1292\">Request::getRealMethod<\/a>"],[0,3,"<a href=\"http-foundation\/Request.php.html#1304\">Request::getMimeType<\/a>"],[0,5,"<a href=\"http-foundation\/Request.php.html#1320\">Request::getFormat<\/a>"],[0,3,"<a href=\"http-foundation\/Request.php.html#1343\">Request::setFormat<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#1365\">Request::getRequestFormat<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1379\">Request::setRequestFormat<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1389\">Request::getContentType<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#1399\">Request::setDefaultLocale<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1413\">Request::getDefaultLocale<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1423\">Request::setLocale<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#1433\">Request::getLocale<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1445\">Request::isMethod<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1455\">Request::isMethodSafe<\/a>"],[0,8,"<a href=\"http-foundation\/Request.php.html#1469\">Request::getContent<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1515\">Request::getETags<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#1523\">Request::isNoCache<\/a>"],[0,8,"<a href=\"http-foundation\/Request.php.html#1535\">Request::getPreferredLanguage<\/a>"],[0,8,"<a href=\"http-foundation\/Request.php.html#1568\">Request::getLanguages<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#1608\">Request::getCharsets<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#1622\">Request::getEncodings<\/a>"],[0,2,"<a href=\"http-foundation\/Request.php.html#1636\">Request::getAcceptableContentTypes<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1655\">Request::isXmlHttpRequest<\/a>"],[42.307692307692,9,"<a href=\"http-foundation\/Request.php.html#1668\">Request::prepareRequestUri<\/a>"],[34.375,17,"<a href=\"http-foundation\/Request.php.html#1715\">Request::prepareBaseUrl<\/a>"],[0,4,"<a href=\"http-foundation\/Request.php.html#1781\">Request::prepareBasePath<\/a>"],[66.666666666667,7,"<a href=\"http-foundation\/Request.php.html#1807\">Request::preparePathInfo<\/a>"],[0,1,"<a href=\"http-foundation\/Request.php.html#1836\">Request::initializeFormats<\/a>"],[0,3,"<a href=\"http-foundation\/Request.php.html#1857\">Request::setPhpDefaultLocale<\/a>"],[33.333333333333,3,"<a href=\"http-foundation\/Request.php.html#1879\">Request::getUrlencodedPrefix<\/a>"],[33.333333333333,3,"<a href=\"http-foundation\/Request.php.html#1894\">Request::createRequestFromFactory<\/a>"],[100,2,"<a href=\"http-foundation\/Request.php.html#1909\">Request::isFromTrustedProxy<\/a>"],[50,16,"<a href=\"http-foundation\/ServerBag.php.html#28\">ServerBag::getHeaders<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/Handler\/NullSessionHandler.php.html#26\">NullSessionHandler::open<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/Handler\/NullSessionHandler.php.html#34\">NullSessionHandler::close<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/Handler\/NullSessionHandler.php.html#42\">NullSessionHandler::read<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/Handler\/NullSessionHandler.php.html#50\">NullSessionHandler::write<\/a>"],[100,1,"<a href=\"http-foundation\/Session\/Storage\/Handler\/NullSessionHandler.php.html#58\">NullSessionHandler::destroy<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/Handler\/NullSessionHandler.php.html#66\">NullSessionHandler::gc<\/a>"],[100,1,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#62\">MetadataBag::__construct<\/a>"],[0,3,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#71\">MetadataBag::initialize<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#92\">MetadataBag::getLifetime<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#105\">MetadataBag::stampNew<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#113\">MetadataBag::getStorageKey<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#123\">MetadataBag::getCreated<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#133\">MetadataBag::getLastUsed<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#141\">MetadataBag::clear<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#149\">MetadataBag::getName<\/a>"],[0,1,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#159\">MetadataBag::setName<\/a>"],[0,2,"<a href=\"http-foundation\/Session\/Storage\/MetadataBag.php.html#164\">MetadataBag::stampCreated<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
