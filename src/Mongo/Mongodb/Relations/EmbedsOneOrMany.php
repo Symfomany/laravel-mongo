@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as BaseCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use Jenssegers\Mongodb\Eloquent\Collection;
+use Mongo\Mongodb\Eloquent\Collection;
 
 abstract class EmbedsOneOrMany extends Relation {
 
@@ -280,7 +280,6 @@ abstract class EmbedsOneOrMany extends Relation {
      * Convert an array of records to a Collection.
      *
      * @param  array  $records
-     * @return \Jenssegers\Mongodb\Eloquent\Collection
      */
     protected function toCollection(array $records = [])
     {

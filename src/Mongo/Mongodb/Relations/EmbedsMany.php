@@ -3,14 +3,12 @@
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
-use MongoId;
 
 class EmbedsMany extends EmbedsOneOrMany {
 
     /**
      * Get the results of the relationship.
      *
-     * @return \Jenssegers\Mongodb\Eloquent\Collection
      */
     public function getResults()
     {
@@ -28,7 +26,7 @@ class EmbedsMany extends EmbedsOneOrMany {
         // Generate a new key if needed.
         if ($model->getKeyName() == '_id' and ! $model->getKey())
         {
-            $model->setAttribute('_id', new MongoId);
+            $model->setAttribute('_id', new \MongoDB\BSON\ObjectID());
         }
 
         // For deeply nested documents, let the parent handle the changes.
@@ -321,7 +319,7 @@ class EmbedsMany extends EmbedsOneOrMany {
     public function __call($method, $parameters)
     {
         // Collection methods
-        if (method_exists('Jenssegers\Mongodb\Eloquent\Collection', $method))
+        if (method_exists('Mongo\Mongodb\Eloquent\Collection', $method))
         {
             return call_user_func_array([$this->getResults(), $method], $parameters);
         }

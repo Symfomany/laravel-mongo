@@ -453,6 +453,23 @@ class Builder extends BaseBuilder {
         return $this->where('_id', '=', $id)->first($columns);
     }
 
+
+    /**
+     * @param $id
+     * @return \MongoDB\BSON\ObjectID
+     * Convert a key to MongoID if needed.
+     */
+    public function convertKey($id){
+        $regex = '/[a-z]{3,}/i';
+
+        if (is_string($id) && !preg_match($regex, $id))
+        {
+            $id = new  \MongoDB\BSON\ObjectID($id);
+        }
+
+        return $id;
+    }
+
     /**
      * Create a raw database expression.
      *
@@ -686,6 +703,9 @@ class Builder extends BaseBuilder {
         }
         return $query;
     }
+
+
+
 
 
     protected function compileWhereNested($where)

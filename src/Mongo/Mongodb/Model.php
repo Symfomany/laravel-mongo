@@ -82,7 +82,6 @@ abstract class Model extends BaseModel {
      * @param  string  $localKey
      * @param  string  $foreignKey
      * @param  string  $relation
-     * @return \Jenssegers\Mongodb\Relations\EmbedsMany
      */
     protected function embedsMany($related, $localKey = null, $foreignKey = null, $relation = null)
     {
@@ -110,6 +109,7 @@ abstract class Model extends BaseModel {
 
         $instance = new $related;
 
+//        dump($localKey, $foreignKey);
         return new EmbedsMany($query, $this, $instance, $localKey, $foreignKey, $relation);
     }
 
