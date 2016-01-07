@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Symfomany/laravel-mongo.svg?branch=master)](https://travis-ci.org/Symfomany/laravel-mongo)
+
 ## MongoDB PHP Project
 
 **Adaptation** of jenssegers/laravel-mongodb **for PHP7 and MongoDB Driver support**
