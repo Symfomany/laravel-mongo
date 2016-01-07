@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Symfomany/laravel-mongo.svg?branch=master)](https://travis-ci.org/Symfomany/laravel-mongo)
-![Packagist](https://img.shields.io/packagist/v/symfomany/laravel-mongo.svg)
+![Packagist](https://img.shields.io/packagist/v/Symfomany/laravel-mongo.svg)
 ![Packagist](https://img.shields.io/twitter/url/https/github.com/Symfomany/laravel-mongo.svg?style=social)
 ![Packagist](https://poser.pugx.org/symfomany/laravel-mongo/license.svg)
 ![Packagist](https://poser.pugx.org/symfomany/laravel-mongo/downloads)
