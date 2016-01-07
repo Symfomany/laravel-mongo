@@ -46,6 +46,7 @@ class Builder extends EloquentBuilder {
      */
     public function insert(array $values)
     {
+        dump('*************');
         // Intercept operations on embedded models and delegate logic
         // to the parent relation instance.
         if ($relation = $this->model->getParentRelation())
