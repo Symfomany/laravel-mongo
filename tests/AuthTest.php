@@ -20,5 +20,5 @@ class AuthTest extends BaseTestCase {
         $this->assertTrue(Auth::attempt(['email' => 'john@doe.com', 'password' => 'foobar'], true));
         $this->assertTrue(Auth::check());
     }
-   
+
 }
