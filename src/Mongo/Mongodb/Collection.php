@@ -32,9 +32,9 @@ class Collection extends \MongoDB\Collection{
     public function __construct(Connection $connection, $namespace)
     {
         $this->connection = $connection;
-        $this->namespace = $this->connection->getNameDatabase().".".$namespace;
+        $this->namespace = $namespace;
 
-        parent::__construct($connection->getManager(), $this->namespace);
+        parent::__construct($this->connection->getManager(), $this->connection->getNameDatabase(), $this->namespace);
     }
 
 
